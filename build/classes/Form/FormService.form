@@ -128,11 +128,11 @@
                       </Group>
                   </Group>
               </Group>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="tipeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="tipeTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="tipeLabel" min="-2" max="-2" attributes="0"/>
+                  <Component id="tipeTextField" alignment="1" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="biayaserviceLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="biayaServiceTextField" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -143,7 +143,7 @@
                   <Component id="resetButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="simpanButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="22" max="32767" attributes="0"/>
+              <EmptySpace pref="61" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -217,6 +217,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Simpan"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="simpanButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="resetButton">
       <Properties>

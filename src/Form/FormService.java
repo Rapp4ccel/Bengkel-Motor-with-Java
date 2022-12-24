@@ -17,6 +17,7 @@ public class FormService extends javax.swing.JFrame {
      * Creates new form FormService
      */
     public FormService() {
+        db = new formDB();
         initComponents();
     }
 
@@ -73,6 +74,11 @@ public class FormService extends javax.swing.JFrame {
         biayaserviceLabel.setText("Biaya Service");
 
         simpanButton.setText("Simpan");
+        simpanButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                simpanButtonActionPerformed(evt);
+            }
+        });
 
         resetButton.setText("Reset");
         resetButton.addActionListener(new java.awt.event.ActionListener() {
@@ -171,10 +177,10 @@ public class FormService extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(rangkaTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(rangkaLabel))))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(tipeLabel)
-                    .addComponent(tipeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(tipeTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(biayaserviceLabel)
                     .addComponent(biayaServiceTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -183,7 +189,7 @@ public class FormService extends javax.swing.JFrame {
                     .addComponent(keluarButton)
                     .addComponent(resetButton)
                     .addComponent(simpanButton))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
 
         pack();
@@ -205,6 +211,21 @@ public class FormService extends javax.swing.JFrame {
     private void resetButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_resetButtonActionPerformed
+
+    private void simpanButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simpanButtonActionPerformed
+        // TODO add your handling code here:
+        String no_antrian = antrianTextField.getText();
+        String tgl_service = tglserviceTextField.getText();
+        String id_customer = idcustomerTextField.getText();
+        String nama_customer = namacustomerTextField.getText();
+        String no_plat = platTextField.getText();
+        String tipe = tipeTextField.getText();
+        String no_rangka = rangkaTextField.getText();
+        String biaya_service = biayaServiceTextField.getText();
+        
+        db.insertDB(no_antrian,tgl_service,id_customer,nama_customer,no_plat,tipe,no_rangka,biaya_service);
+        
+    }//GEN-LAST:event_simpanButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -240,7 +261,7 @@ public class FormService extends javax.swing.JFrame {
             }
         });
     }
-
+formDB db;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel antrianLabel;
     private javax.swing.JTextField antrianTextField;
