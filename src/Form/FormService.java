@@ -183,7 +183,7 @@ public class FormService extends javax.swing.JFrame {
                     .addComponent(keluarButton)
                     .addComponent(resetButton)
                     .addComponent(simpanButton))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         pack();
