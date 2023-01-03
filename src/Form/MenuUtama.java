@@ -31,7 +31,6 @@ public class MenuUtama extends javax.swing.JFrame {
 
         jPanel4 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        datacustomerButton = new javax.swing.JButton();
         dataserviceButton = new javax.swing.JButton();
         keluarButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -55,13 +54,6 @@ public class MenuUtama extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(23, 35, 51));
         jPanel1.setAlignmentX(0.0F);
         jPanel1.setAlignmentY(0.0F);
-
-        datacustomerButton.setText("Data Customer");
-        datacustomerButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                datacustomerButtonActionPerformed(evt);
-            }
-        });
 
         dataserviceButton.setText("Data Service");
         dataserviceButton.addActionListener(new java.awt.event.ActionListener() {
@@ -89,8 +81,7 @@ public class MenuUtama extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(datacustomerButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(dataserviceButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(dataserviceButton, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
                             .addComponent(keluarButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
@@ -102,9 +93,7 @@ public class MenuUtama extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(31, 31, 31)
                 .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(datacustomerButton)
-                .addGap(18, 18, 18)
+                .addGap(59, 59, 59)
                 .addComponent(dataserviceButton)
                 .addGap(18, 18, 18)
                 .addComponent(keluarButton)
@@ -241,13 +230,6 @@ public class MenuUtama extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_dataserviceButtonActionPerformed
 
-    private void datacustomerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_datacustomerButtonActionPerformed
-        // TODO add your handling code here:
-        FormCustomer customer = new FormCustomer();
-        customer.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_datacustomerButtonActionPerformed
-
     private void keluarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_keluarButtonActionPerformed
         // TODO add your handling code here:
         int selectedOption = JOptionPane.showConfirmDialog(null,
@@ -293,7 +275,6 @@ public class MenuUtama extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton datacustomerButton;
     private javax.swing.JButton dataserviceButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
