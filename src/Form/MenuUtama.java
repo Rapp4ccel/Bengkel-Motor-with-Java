@@ -93,11 +93,11 @@ public class MenuUtama extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(31, 31, 31)
                 .addComponent(jLabel1)
-                .addGap(59, 59, 59)
+                .addGap(32, 32, 32)
                 .addComponent(dataserviceButton)
-                .addGap(18, 18, 18)
+                .addGap(27, 27, 27)
                 .addComponent(keluarButton)
-                .addContainerGap(82, Short.MAX_VALUE))
+                .addContainerGap(100, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(153, 153, 255));
