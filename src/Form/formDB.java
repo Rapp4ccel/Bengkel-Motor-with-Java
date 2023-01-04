@@ -36,6 +36,7 @@ public class formDB {
     public void insertDB(String no_antrian,String tgl_service,String id_customer,String nama_customer,String no_plat,String tipe,String no_rangka,String biaya_service){
         
         try {
+            int antri = Integer.parseInt(no_antrian);
             String sql = "insert into bengkel values (?,?,?,?,?,?,?,?)";
             pst = con.prepareStatement(sql);
             pst.setString(1, no_antrian);
