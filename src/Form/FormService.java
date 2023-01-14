@@ -35,29 +35,24 @@ public class FormService extends javax.swing.JFrame {
         tglserviceLabel = new javax.swing.JLabel();
         idcustomerLabel = new javax.swing.JLabel();
         namacustomerLabel = new javax.swing.JLabel();
-        platLabel = new javax.swing.JLabel();
-        rangkaLabel = new javax.swing.JLabel();
-        tipeLabel = new javax.swing.JLabel();
         biayaserviceLabel = new javax.swing.JLabel();
         tglserviceTextField = new javax.swing.JTextField();
         idcustomerTextField = new javax.swing.JTextField();
         namacustomerTextField = new javax.swing.JTextField();
         biayaServiceTextField = new javax.swing.JTextField();
-        platTextField = new javax.swing.JTextField();
-        rangkaTextField = new javax.swing.JTextField();
-        tipeTextField = new javax.swing.JTextField();
         antrianTextField = new javax.swing.JTextField();
         simpanButton = new javax.swing.JButton();
         resetButton = new javax.swing.JButton();
         keluarButton = new javax.swing.JButton();
         comboBox = new javax.swing.JComboBox<>();
         jenisServiceLabel = new javax.swing.JLabel();
+        nextButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("BENGKEL MOTOR JAVA");
 
         jLabel1.setFont(new java.awt.Font("Impact", 0, 18)); // NOI18N
-        jLabel1.setText("DATA SERVICE BENGKEL MAGER GENG");
+        jLabel1.setText("DATA SERVICE");
 
         antrianLabel.setText("No. Antrian");
 
@@ -66,12 +61,6 @@ public class FormService extends javax.swing.JFrame {
         idcustomerLabel.setText("ID Customer");
 
         namacustomerLabel.setText("Nama Customer");
-
-        platLabel.setText("No. Plat");
-
-        rangkaLabel.setText("No. Rangka");
-
-        tipeLabel.setText("Tipe");
 
         biayaserviceLabel.setText("Biaya Service");
 
@@ -111,23 +100,22 @@ public class FormService extends javax.swing.JFrame {
 
         jenisServiceLabel.setText("Jenis Service");
 
+        nextButton.setText("Next");
+        nextButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nextButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel1)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(simpanButton)
-                                .addGap(31, 31, 31)
-                                .addComponent(resetButton)
-                                .addGap(30, 30, 30)
-                                .addComponent(keluarButton))
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(layout.createSequentialGroup()
@@ -136,42 +124,41 @@ public class FormService extends javax.swing.JFrame {
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addComponent(biayaserviceLabel, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(tipeLabel, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(rangkaLabel, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(platLabel, javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jenisServiceLabel, javax.swing.GroupLayout.Alignment.LEADING))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(idcustomerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(biayaServiceTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
-                                            .addComponent(platTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
-                                            .addComponent(rangkaTextField, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(tipeTextField, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(comboBox, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                        .addComponent(namacustomerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(tglserviceTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(antrianTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(15, 15, 15)))
-                        .addGap(0, 38, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(antrianTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel1)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(namacustomerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(idcustomerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(comboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(biayaServiceTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addComponent(idcustomerLabel)
                             .addComponent(tglserviceLabel)
-                            .addComponent(antrianLabel))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(antrianLabel)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(39, 39, 39)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(simpanButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(keluarButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(43, 43, 43)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(resetButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(nextButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
+                .addGap(6, 6, 6)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(antrianLabel)
                     .addComponent(antrianTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                .addGap(18, 18, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tglserviceLabel)
                     .addComponent(tglserviceTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -183,19 +170,7 @@ public class FormService extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(namacustomerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(namacustomerLabel))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(platTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(platLabel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(rangkaTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(rangkaLabel))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tipeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tipeLabel))
-                .addGap(18, 18, 18)
+                .addGap(18, 18, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(comboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jenisServiceLabel))
@@ -206,9 +181,12 @@ public class FormService extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(resetButton)
-                    .addComponent(simpanButton)
-                    .addComponent(keluarButton))
-                .addGap(40, 40, 40))
+                    .addComponent(simpanButton))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(keluarButton)
+                    .addComponent(nextButton))
+                .addGap(6, 6, 6))
         );
 
         pack();
@@ -216,15 +194,18 @@ public class FormService extends javax.swing.JFrame {
 
     private void keluarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_keluarButtonActionPerformed
         // TODO add your handling code here:
-        int selectedOption = JOptionPane.showConfirmDialog(null,
-            "Apakah anda akan kembali ke menu utama?", "Tutup Aplikasi", JOptionPane.YES_NO_OPTION);
-        if (selectedOption == JOptionPane.YES_OPTION) {
-            MenuUtama menu = new MenuUtama();
-            menu.setVisible(true);
-            this.dispose();
-        } else {
-            System.exit(0);
-        }
+        //int selectedOption = JOptionPane.showConfirmDialog(null,
+          //  "Apakah anda akan kembali ke menu utama?", "Tutup Aplikasi", JOptionPane.YES_NO_OPTION);
+        //if (selectedOption == JOptionPane.YES_OPTION) {
+          //  MenuUtama menu = new MenuUtama();
+            //menu.setVisible(true);
+            //this.dispose();
+        //} else {
+          //  System.exit(0);
+        //}
+        MenuUtama MN = new MenuUtama();
+        MN.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_keluarButtonActionPerformed
 
     private void resetButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetButtonActionPerformed
@@ -232,10 +213,7 @@ public class FormService extends javax.swing.JFrame {
         tglserviceTextField.setText("");
         idcustomerTextField.setText("");
         namacustomerTextField.setText("");
-        platTextField.setText("");
         antrianTextField.setText("");
-        tipeTextField.setText("");
-        rangkaTextField.setText("");
         biayaServiceTextField.setText("");
     }//GEN-LAST:event_resetButtonActionPerformed
 
@@ -245,12 +223,9 @@ public class FormService extends javax.swing.JFrame {
         String tgl_service = tglserviceTextField.getText();
         String id_customer = idcustomerTextField.getText();
         String nama_customer = namacustomerTextField.getText();
-        String no_plat = platTextField.getText();
-        String tipe = tipeTextField.getText();
-        String no_rangka = rangkaTextField.getText();
         String biaya_service = biayaServiceTextField.getText();
         
-        db.insertDB(no_antrian,tgl_service,id_customer,nama_customer,no_plat,tipe,no_rangka,biaya_service);
+        db.insertDB(no_antrian,tgl_service,id_customer,nama_customer,biaya_service);
         
     }//GEN-LAST:event_simpanButtonActionPerformed
 
@@ -270,6 +245,13 @@ public class FormService extends javax.swing.JFrame {
                 break;
         }
     }//GEN-LAST:event_comboBoxActionPerformed
+
+    private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
+        // TODO add your handling code here:
+        Motor mtr = new Motor();
+        mtr.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_nextButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -319,15 +301,10 @@ formDB db;
     private javax.swing.JButton keluarButton;
     private javax.swing.JLabel namacustomerLabel;
     private javax.swing.JTextField namacustomerTextField;
-    private javax.swing.JLabel platLabel;
-    private javax.swing.JTextField platTextField;
-    private javax.swing.JLabel rangkaLabel;
-    private javax.swing.JTextField rangkaTextField;
+    private javax.swing.JButton nextButton;
     private javax.swing.JButton resetButton;
     private javax.swing.JButton simpanButton;
     private javax.swing.JLabel tglserviceLabel;
     private javax.swing.JTextField tglserviceTextField;
-    private javax.swing.JLabel tipeLabel;
-    private javax.swing.JTextField tipeTextField;
     // End of variables declaration//GEN-END:variables
 }

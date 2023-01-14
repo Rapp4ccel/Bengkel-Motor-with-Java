@@ -25,20 +25,11 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="simpanButton" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                              <Component id="resetButton" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="keluarButton" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Group type="102" attributes="0">
                                       <Component id="namacustomerLabel" min="-2" max="-2" attributes="0"/>
@@ -47,57 +38,56 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="1" attributes="0">
                                           <Component id="biayaserviceLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="tipeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="rangkaLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="platLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="jenisServiceLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="idcustomerTextField" min="-2" pref="163" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                          <Component id="biayaServiceTextField" alignment="0" pref="162" max="32767" attributes="0"/>
-                                          <Component id="platTextField" alignment="0" pref="162" max="32767" attributes="0"/>
-                                          <Component id="rangkaTextField" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="tipeTextField" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="comboBox" alignment="0" max="32767" attributes="0"/>
-                                      </Group>
-                                      <Component id="namacustomerTextField" min="-2" pref="162" max="-2" attributes="0"/>
-                                  </Group>
                                   <Component id="tglserviceTextField" min="-2" pref="164" max="-2" attributes="0"/>
                                   <Component id="antrianTextField" alignment="0" min="-2" pref="162" max="-2" attributes="0"/>
+                                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                      <Component id="namacustomerTextField" min="-2" pref="162" max="-2" attributes="0"/>
+                                      <Component id="idcustomerTextField" min="-2" pref="163" max="-2" attributes="0"/>
+                                      <Component id="comboBox" alignment="1" min="-2" pref="162" max="-2" attributes="0"/>
+                                      <Component id="biayaServiceTextField" alignment="1" min="-2" pref="162" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                           </Group>
-                      </Group>
-                      <EmptySpace min="0" pref="38" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="idcustomerLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="tglserviceLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="antrianLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="simpanButton" max="32767" attributes="0"/>
+                          <Component id="keluarButton" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="resetButton" max="32767" attributes="0"/>
+                          <Component id="nextButton" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="antrianLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="antrianTextField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="15" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="tglserviceLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="tglserviceTextField" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -112,22 +102,7 @@
                   <Component id="namacustomerTextField" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="namacustomerLabel" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="platTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="platLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="24" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="rangkaTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="rangkaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="tipeTextField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="tipeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="comboBox" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jenisServiceLabel" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -141,9 +116,13 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="resetButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="simpanButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="keluarButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="keluarButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="nextButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -154,7 +133,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Impact" size="18" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="DATA SERVICE BENGKEL MAGER GENG"/>
+        <Property name="text" type="java.lang.String" value="DATA SERVICE"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="antrianLabel">
@@ -177,21 +156,6 @@
         <Property name="text" type="java.lang.String" value="Nama Customer"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="platLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="No. Plat"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="rangkaLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="No. Rangka"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="tipeLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Tipe"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JLabel" name="biayaserviceLabel">
       <Properties>
         <Property name="text" type="java.lang.String" value="Biaya Service"/>
@@ -207,12 +171,6 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="biayaServiceTextFieldActionPerformed"/>
       </Events>
-    </Component>
-    <Component class="javax.swing.JTextField" name="platTextField">
-    </Component>
-    <Component class="javax.swing.JTextField" name="rangkaTextField">
-    </Component>
-    <Component class="javax.swing.JTextField" name="tipeTextField">
     </Component>
     <Component class="javax.swing.JTextField" name="antrianTextField">
     </Component>
@@ -260,6 +218,14 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Jenis Service"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="nextButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Next"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nextButtonActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

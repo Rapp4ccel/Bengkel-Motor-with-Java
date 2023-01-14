@@ -32,8 +32,8 @@ public class MenuUtama extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         dataserviceButton = new javax.swing.JButton();
-        keluarButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        keluarButton = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -55,12 +55,15 @@ public class MenuUtama extends javax.swing.JFrame {
         jPanel1.setAlignmentX(0.0F);
         jPanel1.setAlignmentY(0.0F);
 
-        dataserviceButton.setText("Data Service");
+        dataserviceButton.setText("Service");
         dataserviceButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dataserviceButtonActionPerformed(evt);
             }
         });
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Form/imge_1 copy.png"))); // NOI18N
+        jLabel1.setText("Menu");
 
         keluarButton.setText("Keluar");
         keluarButton.addActionListener(new java.awt.event.ActionListener() {
@@ -69,9 +72,6 @@ public class MenuUtama extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Form/imge_1 copy.png"))); // NOI18N
-        jLabel1.setText("Menu");
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -79,13 +79,13 @@ public class MenuUtama extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(dataserviceButton, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
-                            .addComponent(keluarButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(dataserviceButton, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
+                            .addComponent(keluarButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(24, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -95,9 +95,9 @@ public class MenuUtama extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(32, 32, 32)
                 .addComponent(dataserviceButton)
-                .addGap(27, 27, 27)
+                .addGap(52, 52, 52)
                 .addComponent(keluarButton)
-                .addContainerGap(100, Short.MAX_VALUE))
+                .addContainerGap(75, Short.MAX_VALUE))
         );
 
         jPanel3.setBackground(new java.awt.Color(153, 153, 255));
@@ -237,6 +237,8 @@ public class MenuUtama extends javax.swing.JFrame {
         if (selectedOption == JOptionPane.YES_OPTION) {
             System.exit(0);
         }
+        
+       // JOptionPane.showMessageDialog(null, "Berhasil login");
     }//GEN-LAST:event_keluarButtonActionPerformed
 
     /**
