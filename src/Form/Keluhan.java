@@ -138,6 +138,7 @@ public class Keluhan extends javax.swing.JFrame {
 
     private void selanjutnyaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selanjutnyaButtonActionPerformed
         // TODO add your handling code here:
+        
         System.exit(0);
     }//GEN-LAST:event_selanjutnyaButtonActionPerformed
 
